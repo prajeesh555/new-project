@@ -1,0 +1,108 @@
+/* ---------------------------------------------
+   COLOR & BRAND UTILITIES
+--------------------------------------------- */
+
+/* Accent Text */
+.text-accent {
+  color: #D4724B !important;
+}
+
+/* Accent Button */
+.btn-accent {
+  background-color: #D4724B;
+  color: #fff !important;
+  transition: background-color 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: #c0613d;
+}
+
+/* Accent bar for headings */
+.bar {
+  width: 80px;
+  height: 4px;
+  background-color: #D4724B;
+  border-radius: 4px;
+  margin-inline: auto;
+}
+
+
+/* ---------------------------------------------
+   HERO / OVERLAYS
+--------------------------------------------- */
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.7),
+    #1a1a1a
+  );
+}
+
+
+/* ---------------------------------------------
+   ANIMATIONS
+--------------------------------------------- */
+
+/* Fade Up Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ---------------------------------------------
+   HOVER EFFECTS
+--------------------------------------------- */
+
+/* Card Lift on Hover */
+.hover-up {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-up:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Zoom inside containers */
+.img-zoom {
+  transition: transform 0.5s ease;
+}
+
+.hover-up:hover .img-zoom {
+  transform: scale(1.1);
+}
+
+/* Subtle Button Zoom */
+.zoom-btn {
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+
+.zoom-btn:hover {
+  transform: scale(1.04);
+}
